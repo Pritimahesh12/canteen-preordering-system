@@ -4,7 +4,7 @@ import { StoreContext } from "./StoreContext";
 
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
-    const url = "https://canteen-preordering-system.onrender.com"
+    const url = import.meta.env.VITE_BACKEND_URL || "https://canteen-preordering-system.onrender.com";
     const [token, setToken] = useState("");
     const [showLogin, setShowLogin] = useState(false);
     const [food_list, setFoodList] = useState([]);
