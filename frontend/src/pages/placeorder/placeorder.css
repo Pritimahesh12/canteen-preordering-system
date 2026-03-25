@@ -1,0 +1,155 @@
+/* Main container - form on left, summary on right */
+.place-order {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0px 40px;
+}
+
+/* ── Left Side ── */
+.place-order-left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Section title */
+.place-order-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* All input fields */
+.place-order-left input,
+.place-order-left textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Focus effect on inputs */
+.place-order-left input:focus,
+.place-order-left textarea:focus {
+    border-color: tomato;
+}
+
+/* Two inputs side by side - for first and last name */
+.multi-fields {
+    display: flex;
+    gap: 15px;
+}
+
+.multi-fields input {
+    width: 50%;
+}
+
+/* Pickup notice box */
+.pickup-notice {
+    background-color: #fff4f2;
+    border: 1px solid tomato;
+    border-radius: 6px;
+    padding: 12px 15px;
+    color: tomato;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ── Right Side ── */
+.place-order-right {
+    width: 40%;
+}
+
+/* Order summary box */
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+}
+
+.cart-total h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* List of ordered items */
+.order-summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Each item row - name on left, price on right */
+.order-summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Total row */
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+}
+
+.cart-total hr {
+    width: 100%;
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+/* Email and time info box */
+.order-info {
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Place order button */
+.place-order-btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: #e03c00;
+}
+
+/* Responsive - stack on smaller screens */
+@media (max-width: 800px) {
+    .place-order {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .place-order-left,
+    .place-order-right {
+        width: 100%;
+    }
+}

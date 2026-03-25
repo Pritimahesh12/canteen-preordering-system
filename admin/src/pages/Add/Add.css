@@ -1,0 +1,101 @@
+.add{
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+.add form{
+    gap: 20px;
+}
+
+/* Section Labels */
+.add p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #444444;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+/* Upload Area */
+.add-img-upload img{
+    width: 120px;
+}
+
+.add-img-upload > p{
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Input Fields */
+.add-product-name, .add-product-description{
+    width: max(40%, 280px);
+}
+
+.add-product-name input, .add-product-description textarea{
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    font-family: Outfit;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.add-product-name input::placeholder,
+.add-product-description textarea::placeholder{
+    font-size: 13px;
+    color: #bbb;
+    font-style: italic;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus{
+    border-color: #aaa;
+}
+
+/* Category & Price */
+.add-category-price{
+    display: flex;
+    gap: 30px;
+}
+
+.add-category-price select,
+.add-category-price input{
+    max-width: 120px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Outfit;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.add-category-price select{
+    cursor: pointer;
+}
+
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Outfit;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover{
+    background-color: #333;
+}
