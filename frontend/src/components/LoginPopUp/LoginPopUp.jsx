@@ -31,7 +31,7 @@ const LoginPopUp = ({setShowLogin}) => {
                 setToken(response.data.token);
                 localStorage.setItem("token", response.data.token);
                 if (response.data.isAdmin) {
-                    window.location.href = "https://canteen-preordering-system-jp6u.vercel.app/";
+                    window.location.href = "https://canteen-preordering-system-jp6u-2z6xsgh7n.vercel.app";
                 } else {
                     setShowLogin(false);
                 }
