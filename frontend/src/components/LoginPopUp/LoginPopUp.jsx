@@ -31,7 +31,7 @@ const LoginPopUp = ({setShowLogin}) => {
                 setToken(response.data.token);
                 localStorage.setItem("token", response.data.token);
                 if (response.data.isAdmin) {
-                    window.location.href = "http://localhost:5173";
+                    window.location.href = "https://your-admin-panel.vercel.app";
                 } else {
                     setShowLogin(false);
                 }
